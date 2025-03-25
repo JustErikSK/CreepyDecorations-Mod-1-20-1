@@ -1,6 +1,7 @@
 package net.withrage.creepydecorations;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -12,12 +13,14 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.withrage.creepydecorations.block.ModBlocks;
+import net.withrage.creepydecorations.item.ModItems;
 import org.slf4j.Logger;
 
 @Mod(CreepyDecorations.MOD_ID)
 public class CreepyDecorations {
 
-    public static final String MOD_ID = "creepydecor";
+    public static final String MOD_ID = "creepydecorations";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
@@ -28,6 +31,8 @@ public class CreepyDecorations {
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
@@ -39,9 +44,10 @@ public class CreepyDecorations {
 
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
-
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.HAUNTED_PUMPKIN);
+        }
     }
 
     @SubscribeEvent
