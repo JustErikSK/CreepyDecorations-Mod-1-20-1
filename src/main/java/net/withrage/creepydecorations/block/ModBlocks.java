@@ -18,7 +18,10 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreepyDecorations.MOD_ID);
 
     public static final RegistryObject<Block> HAUNTED_PUMPKIN = registerBlock("haunted_pumpkin", () -> new HauntedPumpkin(BlockBehaviour.Properties.of()
-            .strength(2).sound(SoundType.HARD_CROP).lightLevel(state -> 10)));
+            .strength(1f).sound(SoundType.CHISELED_BOOKSHELF).lightLevel(state -> 10)));
+
+    public static final RegistryObject<Block> BROKEN_DOLL = registerBlock("broken_doll", () -> new BrokenDoll(BlockBehaviour.Properties.of()
+            .noOcclusion().strength(1f).sound(SoundType.WOOL)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
