@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> BROKEN_DOLL = registerBlock("broken_doll", () -> new BrokenDoll(BlockBehaviour.Properties.of()
             .noOcclusion().strength(1f).sound(SoundType.WOOL)));
 
+    public static final RegistryObject<Block> GRAVESTONE = registerBlock("stone_gravestone", () -> new Gravestone(BlockBehaviour.Properties.of()
+            .noOcclusion().strength(1f).sound(SoundType.DEEPSLATE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
