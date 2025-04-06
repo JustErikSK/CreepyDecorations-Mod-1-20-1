@@ -49,6 +49,7 @@ public class CreepyDecorations {
             event.accept(ModBlocks.HAUNTED_PUMPKIN);
             event.accept(ModBlocks.BROKEN_DOLL);
             event.accept(ModBlocks.GRAVESTONE);
+            event.accept(ModBlocks.WOODEN_CROSS);
         }
     }
 
