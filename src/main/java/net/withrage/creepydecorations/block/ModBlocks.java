@@ -29,6 +29,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> WOODEN_CROSS = registerBlock("wooden_cross", () -> new WoodenCross(BlockBehaviour.Properties.of()
             .noOcclusion().strength(1f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> RUSTY_CHAINS = registerBlock("rusty_chains", () -> new RustyChains(BlockBehaviour.Properties.of()
+            .noOcclusion().strength(1f).sound(SoundType.CHAIN)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
