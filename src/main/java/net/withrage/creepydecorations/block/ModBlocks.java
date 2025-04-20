@@ -29,7 +29,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> WOODEN_CROSS = registerBlock("wooden_cross", () -> new WoodenCross(BlockBehaviour.Properties.of()
             .noOcclusion().strength(1f).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> RUSTY_CHAINS = registerBlock("rusty_chains", () -> new RustyChains(BlockBehaviour.Properties.of()
+    public static final RegistryObject<Block> LEG_SHACKLE = registerBlock("leg_shackle", () -> new LegShackle(BlockBehaviour.Properties.of()
             .noOcclusion().strength(1f).sound(SoundType.CHAIN)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
