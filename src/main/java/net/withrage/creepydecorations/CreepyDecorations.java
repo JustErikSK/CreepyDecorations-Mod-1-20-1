@@ -52,7 +52,7 @@ public class CreepyDecorations {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.HAUNTED_PUMPKIN);
             event.accept(ModBlocks.BROKEN_DOLL);
-            event.accept(ModBlocks.GRAVESTONE);
+            event.accept(ModBlocks.MOSSY_GRAVESTONE);
             event.accept(ModBlocks.WOODEN_CROSS);
             event.accept(ModBlocks.LEG_SHACKLE);
             event.accept(ModBlocks.EMERGING_HAND);

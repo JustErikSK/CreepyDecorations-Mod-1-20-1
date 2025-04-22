@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench by Satorisek - our official artist!",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "creepydecorations:block/stone_gravestone",
-		"particle": "creepydecorations:block/stone_gravestone"
+		"0": "creepydecorations:block/mossy_gravestone",
+		"particle": "creepydecorations:block/mossy_gravestone"
 	},
 	"elements": [
 		{
