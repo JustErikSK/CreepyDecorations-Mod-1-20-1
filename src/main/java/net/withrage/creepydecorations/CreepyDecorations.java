@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.withrage.creepydecorations.block.ModBlocks;
+import net.withrage.creepydecorations.item.ModCreativeModeTabs;
 import net.withrage.creepydecorations.item.ModItems;
 import org.slf4j.Logger;
 
@@ -31,6 +32,9 @@ public class CreepyDecorations {
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

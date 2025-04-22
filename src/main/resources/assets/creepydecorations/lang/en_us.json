@@ -4,5 +4,7 @@
   "block.creepydecorations.stone_gravestone": "Gravestone",
   "block.creepydecorations.wooden_cross": "Wooden Cross",
   "block.creepydecorations.leg_shackle": "Leg Shackle",
-  "block.creepydecorations.emerging_hand": "Emerging Hand"
+  "block.creepydecorations.emerging_hand": "Emerging Hand",
+
+  "creativetab.creepydecorations.creepy_decorations_creative_tab": "Creepy Decorations"
 }
