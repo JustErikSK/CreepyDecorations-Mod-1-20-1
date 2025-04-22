@@ -51,6 +51,7 @@ public class CreepyDecorations {
             event.accept(ModBlocks.GRAVESTONE);
             event.accept(ModBlocks.WOODEN_CROSS);
             event.accept(ModBlocks.LEG_SHACKLE);
+            event.accept(ModBlocks.EMERGING_HAND);
         }
     }
 

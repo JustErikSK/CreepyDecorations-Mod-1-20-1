@@ -32,6 +32,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LEG_SHACKLE = registerBlock("leg_shackle", () -> new LegShackle(BlockBehaviour.Properties.of()
             .noOcclusion().strength(1f).sound(SoundType.CHAIN)));
 
+    public static final RegistryObject<Block> EMERGING_HAND = registerBlock("emerging_hand", () -> new EmergingHand(BlockBehaviour.Properties.of()
+            .noOcclusion().strength(1f).sound(SoundType.MUD)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
