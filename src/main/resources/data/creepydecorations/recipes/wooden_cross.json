@@ -1,6 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
   "key": {
     "A": {
       "item": "minecraft:spruce_fence"
@@ -9,13 +14,8 @@
       "item": "minecraft:stick"
     }
   },
-  "pattern": [
-    "xAx",
-    "ABA",
-    "xAx"
-  ],
   "result": {
     "count": 1,
-    "id": "creepydecorations:wooden_cross"
+    "item": "creepydecorations:wooden_cross"
   }
 }

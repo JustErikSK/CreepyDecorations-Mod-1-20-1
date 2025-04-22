@@ -1,6 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ADA"
+  ],
   "key": {
     "A": {
       "item": "minecraft:stick"
@@ -15,13 +20,8 @@
       "item": "minecraft:string"
     }
   },
-  "pattern": [
-    "ABA",
-    "BCB",
-    "ADA"
-  ],
   "result": {
     "count": 1,
-    "id": "creepydecorations:broken_doll"
+    "item": "creepydecorations:broken_doll"
   }
 }

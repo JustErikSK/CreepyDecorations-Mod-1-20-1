@@ -1,6 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "pattern": [
+    "ABA",
+    "CDC",
+    " D "
+  ],
   "key": {
     "A": {
       "item": "minecraft:rotten_flesh"
@@ -9,19 +14,14 @@
       "item": "minecraft:bone"
     },
     "C": {
-      "item": "minecraft:sand"
+      "item": "minecraft:dirt"
     },
     "D": {
       "item": "minecraft:soul_sand"
     }
   },
-  "pattern": [
-    "ABA",
-    "CDC",
-    "xDx"
-  ],
   "result": {
     "count": 1,
-    "id": "creepydecorations:emerging_hand"
+    "item": "creepydecorations:emerging_hand"
   }
 }

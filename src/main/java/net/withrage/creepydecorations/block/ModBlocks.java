@@ -35,14 +35,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> EMERGING_HAND = registerBlock("emerging_hand", () -> new EmergingHand(BlockBehaviour.Properties.of()
             .noOcclusion().strength(1f).sound(SoundType.MUD)));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
-    }
-
-    private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> blockSupplier) {
+        RegistryObject<T> block = ModBlocks.BLOCKS.register(name, blockSupplier);
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return block;
     }
 
     public static void register(IEventBus eventBus) {

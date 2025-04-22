@@ -20,7 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.HAUNTED_PUMPKIN.get());
                         output.accept(ModBlocks.BROKEN_DOLL.get());
-                        output.accept(ModBlocks.GRAVESTONE.get());
+                        output.accept(ModBlocks.MOSSY_GRAVESTONE.get());
                         output.accept(ModBlocks.WOODEN_CROSS.get());
                         output.accept(ModBlocks.LEG_SHACKLE.get());
                         output.accept(ModBlocks.EMERGING_HAND.get());

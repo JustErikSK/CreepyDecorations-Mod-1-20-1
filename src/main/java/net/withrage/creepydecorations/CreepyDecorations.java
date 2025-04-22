@@ -6,6 +6,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -38,25 +39,12 @@ public class CreepyDecorations {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        modEventBus.addListener(this::addCreative);
-
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.HAUNTED_PUMPKIN);
-            event.accept(ModBlocks.BROKEN_DOLL);
-            event.accept(ModBlocks.MOSSY_GRAVESTONE);
-            event.accept(ModBlocks.WOODEN_CROSS);
-            event.accept(ModBlocks.LEG_SHACKLE);
-            event.accept(ModBlocks.EMERGING_HAND);
-        }
     }
 
     @SubscribeEvent
