@@ -11,7 +11,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, CreepyDecorations.MOD_ID);
 
     public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
+            ITEMS.register(eventBus);
     }
 
 }
