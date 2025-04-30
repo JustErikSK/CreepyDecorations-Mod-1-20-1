@@ -1,1 +1,1 @@
-This mod is not yet finished, README file will be done later
+Add a chilling atmosphere to your world with a mod designed to bring horror-themed decorative blocks to Minecraft!
