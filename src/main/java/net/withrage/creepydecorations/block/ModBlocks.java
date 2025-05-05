@@ -18,22 +18,22 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, CreepyDecorations.MOD_ID);
 
     public static final RegistryObject<Block> HAUNTED_PUMPKIN = registerBlock("haunted_pumpkin", () -> new HauntedPumpkin(BlockBehaviour.Properties.of()
-            .noOcclusion().strength(1f).sound(SoundType.STEM).lightLevel(state -> 10)));
+            .noOcclusion().strength(2f).sound(SoundType.STEM).lightLevel(state -> 10)));
 
     public static final RegistryObject<Block> BROKEN_DOLL = registerBlock("broken_doll", () -> new BrokenDoll(BlockBehaviour.Properties.of()
-            .noOcclusion().strength(1f).sound(SoundType.WOOL)));
+            .noOcclusion().strength(0.5f).sound(SoundType.WOOL)));
 
     public static final RegistryObject<Block> MOSSY_GRAVESTONE = registerBlock("mossy_gravestone", () -> new MossyGravestone(BlockBehaviour.Properties.of()
-            .noOcclusion().strength(1f).sound(SoundType.DEEPSLATE)));
+            .noOcclusion().strength(3f).sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> WOODEN_CROSS = registerBlock("wooden_cross", () -> new WoodenCross(BlockBehaviour.Properties.of()
-            .noOcclusion().strength(1f).sound(SoundType.WOOD)));
+            .noOcclusion().strength(2f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> LEG_SHACKLE = registerBlock("leg_shackle", () -> new LegShackle(BlockBehaviour.Properties.of()
-            .noOcclusion().strength(1f).sound(SoundType.CHAIN)));
+            .noOcclusion().strength(5f).sound(SoundType.CHAIN)));
 
     public static final RegistryObject<Block> EMERGING_HAND = registerBlock("emerging_hand", () -> new EmergingHand(BlockBehaviour.Properties.of()
-            .noOcclusion().strength(1f).sound(SoundType.MUD)));
+            .noOcclusion().strength(0.5f).sound(SoundType.MUD)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> blockSupplier) {
         RegistryObject<T> block = ModBlocks.BLOCKS.register(name, blockSupplier);
