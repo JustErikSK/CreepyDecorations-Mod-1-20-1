@@ -1,4 +1,4 @@
-package net.withrage.creepydecorations;
+/*package net.withrage.creepydecorations;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -59,3 +59,4 @@ public class Config
                 .collect(Collectors.toSet());
     }
 }
+*/
