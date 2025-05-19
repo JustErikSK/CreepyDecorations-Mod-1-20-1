@@ -10,3 +10,5 @@ In order to use this mod, you need Minecraft version 1.20.1 and Forge (47.4.0 is
 - **Leg Shackle** block
 - **Emerging Hand** block
 - Recipes are compatible with JEI
+
+zh_cn translation by Ansurfen
